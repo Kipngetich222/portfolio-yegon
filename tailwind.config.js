@@ -8,10 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#3B82F6',
-        secondary: '#1E40AF',
-        dark: '#0F172A',
-        light: '#F8FAFC',
+        primary: 'oklch(55.3% 0.013 58.071)', // #3B82F6 in RGB
+        secondary: 'oklch(44.4% 0.011 73.639)', // #1E40AF
+        dark: 'oklch(37.4% 0.01 67.558)', // #0F172A
+        light: 'rgb(248 250 252)', // #F8FAFC
+        'oklch-primary': 'oklch(55.3% 0.013 58.071)',
+        'oklch-dark': 'oklch(44.4% 0.011 73.639)',
+        'oklch-darker': 'oklch(37.4% 0.01 67.558)',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
