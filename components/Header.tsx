@@ -1,89 +1,3 @@
-// 'use client'
-
-// import { useState } from 'react'
-// import { Menu, X, Code2 } from 'lucide-react'
-// import Link from 'next/link'
-
-// const navItems = [
-//   { name: 'Home', href: '/' },
-//   { name: 'About', href: '/about' },
-//   { name: 'Projects', href: '/projects' },
-//   { name: 'Experience', href: '/experience' },
-//   { name: 'Contact', href: '/contact' },
-// ]
-
-// export default function Header() {
-//   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
-//   return (
-//     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b">
-//       <nav className="container mx-auto px-4 py-4">
-//         <div className="flex items-center justify-between">
-//           <Link href="/" className="flex items-center space-x-2">
-//             <Code2 className="h-8 w-8 text-primary" />
-//             <span className="text-xl font-bold gradient-text">Your Name</span>
-//           </Link>
-
-//           {/* Desktop Navigation */}
-//           <div className="hidden md:flex items-center space-x-8">
-//             {navItems.map((item) => (
-//               <Link
-//                 key={item.name}
-//                 href={item.href}
-//                 className="text-gray-600 hover:text-primary transition-colors font-medium"
-//               >
-//                 {item.name}
-//               </Link>
-//             ))}
-//             <a
-//               href="/resume.pdf"
-//               className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition-colors"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//             >
-//               Resume
-//             </a>
-//           </div>
-
-//           {/* Mobile Menu Button */}
-//           <button
-//             className="md:hidden"
-//             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-//           >
-//             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-//           </button>
-//         </div>
-
-//         {/* Mobile Navigation */}
-//         {mobileMenuOpen && (
-//           <div className="md:hidden mt-4 pb-4">
-//             <div className="flex flex-col space-y-4">
-//               {navItems.map((item) => (
-//                 <Link
-//                   key={item.name}
-//                   href={item.href}
-//                   className="text-gray-600 hover:text-primary transition-colors py-2"
-//                   onClick={() => setMobileMenuOpen(false)}
-//                 >
-//                   {item.name}
-//                 </Link>
-//               ))}
-//               <a
-//                 href="/resume.pdf"
-//                 className="bg-primary text-white px-4 py-2 rounded-lg text-center"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//               >
-//                 Download Resume
-//               </a>
-//             </div>
-//           </div>
-//         )}
-//       </nav>
-//     </header>
-//   )
-// }
-
 'use client'
 
 import { useState } from 'react'
@@ -123,7 +37,7 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="/resume.pdf"
+              href="/VictorYegonResume.pdf"
               className="flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-secondary transition-all duration-300 hover:shadow-lg"
               target="_blank"
               rel="noopener noreferrer"
@@ -158,7 +72,7 @@ export default function Header() {
                 </Link>
               ))}
               <a
-                href="/resume.pdf"
+                href="/VictorYegonResume.pdf"
                 className="flex items-center justify-center gap-2 bg-primary text-white px-4 py-3 rounded-lg hover:bg-secondary transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

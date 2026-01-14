@@ -15,9 +15,9 @@ body {
 }
 
 @theme {
-  --color-primary: oklch(55.3% 0.013 58.071);
-  --color-secondary: oklch(44.4% 0.011 73.639);
-  --color-dark: oklch(37.4% 0.01 67.558);
+  --color-primary: oklch(44.4% 0.011 73.639);
+  --color-secondary: oklch(37.4% 0.01 67.558);
+  --color-dark: oklch(26.8% 0.007 34.298);
   --color-light: rgb(248 250 252);
   
   /* oklch colors as CSS variables */

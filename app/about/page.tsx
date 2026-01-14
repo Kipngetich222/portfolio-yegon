@@ -21,7 +21,7 @@ export default function AboutPage() {
                 Recent Computer Science graduate with a passion for creating 
                 innovative software solutions. My academic journey has equipped 
                 me with strong foundations in algorithms, data structures, and 
-                software engineering principles.
+                software engineering principles amongst other critical fields in Tech.
               </p>
               <p className="text-gray-600">
                 I enjoy tackling complex problems and transforming ideas into 
@@ -44,7 +44,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span>Specialize in cloud-native application development</span>
+                  <span>Diving deep into technology and exploring all the posibilities it offers</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
@@ -52,7 +52,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span>Mentor aspiring developers</span>
+                  <span>Mentor aspiring developers and the young generation</span>
                 </li>
               </ul>
             </div>
@@ -68,17 +68,18 @@ export default function AboutPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-l-4 border-primary pl-4 py-2">
+                  <h3 className="font-bold">Computer Science</h3>
+                  <p className="text-gray-600 text-sm">Kisii University</p>
+                </div>
+                <div className="border-l-4 border-primary pl-4 py-2">
                   <h3 className="font-bold">AWS Certified Cloud Practitioner</h3>
                   <p className="text-gray-600 text-sm">Amazon Web Services</p>
                 </div>
                 <div className="border-l-4 border-primary pl-4 py-2">
-                  <h3 className="font-bold">Google Professional Data Engineer</h3>
-                  <p className="text-gray-600 text-sm">Google Cloud</p>
+                  <h3 className="font-bold">Ajira Digital – Graphic Design</h3>
+                  <p className="text-gray-600 text-sm">Ministry of ICT</p>
                 </div>
-                <div className="border-l-4 border-primary pl-4 py-2">
-                  <h3 className="font-bold">React Developer Certification</h3>
-                  <p className="text-gray-600 text-sm">Meta</p>
-                </div>
+                
               </div>
             </div>
             
@@ -95,13 +96,18 @@ export default function AboutPage() {
                   <span className="px-2 py-1 bg-primary/10 text-primary rounded text-sm">Current</span>
                 </div>
                 <div className="flex justify-between items-center">
+                  <span>DevOps & CI/CD</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary rounded text-sm">In Progress</span>
+                </div>
+                <div className="flex justify-between items-center">
                   <span>Machine Learning Engineering</span>
                   <span className="px-2 py-1 bg-primary/10 text-primary rounded text-sm">Planning</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span>DevOps & CI/CD</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary rounded text-sm">In Progress</span>
+                  <span>Blockchain</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary rounded text-sm">Planning</span>
                 </div>
+                
               </div>
             </div>
           </div>

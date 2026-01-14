@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: 'oklch(55.3% 0.013 58.071)', // #3B82F6 in RGB
-        secondary: 'oklch(44.4% 0.011 73.639)', // #1E40AF
-        dark: 'oklch(37.4% 0.01 67.558)', // #0F172A
+        primary: 'oklch(44.4% 0.011 73.639)', // #3B82F6 in RGB
+        secondary: 'oklch(37.4% 0.01 67.558)', // #1E40AF
+        dark: 'oklch(26.8% 0.007 34.298)', // #0F172A
         light: 'rgb(248 250 252)', // #F8FAFC
         'oklch-primary': 'oklch(55.3% 0.013 58.071)',
         'oklch-dark': 'oklch(44.4% 0.011 73.639)',

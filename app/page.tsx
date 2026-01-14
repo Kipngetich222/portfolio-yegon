@@ -27,13 +27,13 @@ const skills = [
     icon: <Cloud />,
     title: 'Cloud & DevOps',
     description: 'AWS, Docker, CI/CD, Serverless',
-    technologies: ['AWS', 'Docker', 'GitHub Actions', 'Kubernetes']
+    technologies: ['AWS', 'Docker', 'GitHub Actions']
   },
   {
     icon: <Brain />,
     title: 'AI/ML',
     description: 'TensorFlow, PyTorch, Data Analysis',
-    technologies: ['TensorFlow', 'PyTorch', 'Pandas', 'Scikit-learn']
+    technologies: ['TensorFlow', 'PyTorch', 'Scikit-learn']
   },
   {
     icon: <Globe />,
@@ -45,34 +45,34 @@ const skills = [
     icon: <Shield />,
     title: 'Cybersecurity',
     description: 'Network Security, Cryptography, Ethical Hacking',
-    technologies: ['OWASP', 'Cryptography', 'Penetration Testing']
+    technologies: ['Cryptography', 'Penetration Testing']
   }
 ]
 
 const featuredProjects = [
   {
-    title: 'E-commerce Platform',
-    description: 'Full-stack e-commerce solution with real-time inventory management and payment integration.',
-    technologies: ['Next.js', 'Node.js', 'MongoDB', 'Stripe'],
-    githubUrl: 'https://github.com/yourusername/ecommerce',
-    liveUrl: 'https://demo.example.com',
-    image: '/images/project1.jpg'
+    title: 'Banking Application System',
+    description: 'Full-stack e-commerce solution with real-time inventory management.',
+    technologies: ['Next.js', 'Node.js', 'MySQL', 'Java RMI'],
+    githubUrl: 'https://github.com/Kipngetich222/Bank_app',
+    // liveUrl: 'https://demo.example.com',
+    image: '/images/banking_app.png'
   },
   {
-    title: 'AI-Powered Chatbot',
-    description: 'Intelligent chatbot using natural language processing for customer service automation.',
+    title: 'Intelligent Infant Care System',
+    description: 'A smart monitoring system using simulated sensors and mobile alerts for infant safety and health tracking.',
     technologies: ['Python', 'TensorFlow', 'FastAPI', 'React'],
-    githubUrl: 'https://github.com/yourusername/chatbot',
-    liveUrl: 'https://chatbot.example.com',
-    image: '/images/project2.jpg'
+    githubUrl: 'https://github.com/Kipngetich222/Intelligent-Infant-monitoring',
+    // liveUrl: 'https://chatbot.example.com',
+    image: '/images/infant_monitoring.png'
   },
   {
-    title: 'Cloud Storage Solution',
-    description: 'Secure cloud storage system with file encryption and real-time synchronization.',
-    technologies: ['AWS S3', 'React', 'Node.js', 'Redis'],
-    githubUrl: 'https://github.com/yourusername/cloud-storage',
-    liveUrl: 'https://storage.example.com',
-    image: '/images/project3.jpg'
+    title: 'Teacher-Parent Core-Teaching Platform',
+    description: 'A communication and resource-sharing platform for teachers and parents.',
+    technologies: ['MongoDB', 'React', 'Node.js', 'Redis', 'Deepseeker AI'],
+    githubUrl: 'https://github.com/Kipngetich222/4thProject',
+    // liveUrl: 'https://storage.example.com',
+    image: '/images/teacher-parent.jpg'
   }
 ]
 
@@ -133,7 +133,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold">Bachelor of Science in Computer Science</h3>
                 <p className="text-gray-600 text-lg mb-2">Kisii University, Graduated 2025</p>
                 <p className="text-gray-700">
-                  GPA: 3.8/4.0 | Dean's List | Relevant Coursework: Data Structures, 
+                  Relevant Coursework: Data Structures, 
                   Algorithms, Machine Learning, Database Systems, Computer Networks, Blockchain, Cloud Computing, Big Data Analytics, Cybersecurity.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
