@@ -6,29 +6,29 @@ import { useState } from 'react'
 
 const allProjects = [
   {
-    title: 'E-commerce Platform',
-    description: 'Full-stack e-commerce solution with real-time inventory management, user authentication, and payment integration using Stripe.',
-    technologies: ['Next.js', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
-    githubUrl: 'https://github.com/yourusername/ecommerce',
-    liveUrl: 'https://demo.example.com',
+    title: 'Teacher-Parent Core-Teaching Platform',
+    description: 'A communication and resource-sharing platform for teachers and parents.',
+    technologies: ['Next.js', 'Node.js', 'MongoDB', 'Deepseek AI', 'Redux'],
+    githubUrl: 'https://github.com/Kipngetich222/4thProject',
+    // liveUrl: 'https://demo.example.com',
     category: 'full-stack',
     featured: true
   },
   {
-    title: 'AI-Powered Chatbot',
-    description: 'Intelligent chatbot using natural language processing and machine learning for customer service automation.',
+    title: 'Intelligent Infant Care System',
+    description: 'A smart monitoring system using simulated sensors and mobile alerts for infant safety and health tracking.',
     technologies: ['Python', 'TensorFlow', 'FastAPI', 'React', 'Docker'],
-    githubUrl: 'https://github.com/yourusername/chatbot',
-    liveUrl: 'https://chatbot.example.com',
+    githubUrl: 'https://github.com/Kipngetich222/Intelligent-Infant-monitoring',
+    // liveUrl: 'https://chatbot.example.com',
     category: 'ai-ml',
     featured: true
   },
   {
-    title: 'Cloud Storage Solution',
-    description: 'Secure cloud storage system with file encryption, real-time synchronization, and user management.',
-    technologies: ['AWS S3', 'React', 'Node.js', 'Redis', 'WebSocket'],
-    githubUrl: 'https://github.com/yourusername/cloud-storage',
-    liveUrl: 'https://storage.example.com',
+    title: 'Bank App Application',
+    description: 'A mock mobile banking app with features like transfers, balance checks, and transaction history.',
+    technologies: ['Java RMI', 'React', 'Node.js', 'Redis', 'WebSocket', 'MySQL'],
+    githubUrl: 'https://github.com/Kipngetich222/Bank_app',
+    // liveUrl: 'https://storage.example.com',
     category: 'cloud',
     featured: true
   },
@@ -36,27 +36,27 @@ const allProjects = [
     title: 'Task Management App',
     description: 'Collaborative task management application with drag-and-drop functionality and real-time updates.',
     technologies: ['React', 'TypeScript', 'Firebase', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/yourusername/task-manager',
-    liveUrl: 'https://tasks.example.com',
+    githubUrl: 'https://github.com/Kipngetich222/todoList',
+    // liveUrl: 'https://tasks.example.com',
     category: 'web',
     featured: false
   },
   {
-    title: 'Weather Dashboard',
-    description: 'Real-time weather forecasting dashboard with interactive maps and location-based predictions.',
-    technologies: ['Vue.js', 'Weather API', 'Chart.js', 'Leaflet'],
-    githubUrl: 'https://github.com/yourusername/weather-dashboard',
-    liveUrl: 'https://weather.example.com',
+    title: 'Ecomerse Platform',
+    description: 'Full-stack e-commerce solution with real-time inventory management.',
+    technologies: ['Next.js', 'Node.js', 'MongoDB'],
+    githubUrl: 'https://github.com/Kipngetich222/wambuis-closet',
+    // liveUrl: 'https://weather.example.com',
     category: 'web',
     featured: false
   },
   {
-    title: 'Blockchain Voting System',
-    description: 'Decentralized voting application built on Ethereum blockchain with smart contracts.',
-    technologies: ['Solidity', 'Web3.js', 'React', 'Hardhat'],
-    githubUrl: 'https://github.com/yourusername/blockchain-voting',
-    liveUrl: 'https://voting.example.com',
-    category: 'blockchain',
+    title: 'Search Engine Filter App',
+    description: 'A web app that filters items based on character input.',
+    technologies: ['React', 'JavaScript', 'CSS'],
+    githubUrl: 'https://github.com/Kipngetich222/searchengine',
+    // liveUrl: 'https://voting.example.com',
+    category: 'web',
     featured: false
   }
 ]
@@ -90,8 +90,8 @@ export default function ProjectsPage() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-          <div className="bg-white p-6 rounded-xl shadow-lg text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 place-items-center">
+          {/* <div className="bg-white p-6 rounded-xl shadow-lg text-center">
             <div className="text-3xl font-bold text-primary mb-2">{allProjects.length}</div>
             <div className="text-gray-600">Total Projects</div>
           </div>
@@ -100,14 +100,14 @@ export default function ProjectsPage() {
               {allProjects.filter(p => p.liveUrl).length}
             </div>
             <div className="text-gray-600">Live Demos</div>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-lg text-center">
+          </div> */}
+          <div className="bg-white p-6 rounded-xl shadow-lg text-center md:col-span-2">
             <div className="text-3xl font-bold text-primary mb-2">
               {new Set(allProjects.flatMap(p => p.technologies)).size}
             </div>
             <div className="text-gray-600">Technologies</div>
           </div>
-          <div className="bg-white p-6 rounded-xl shadow-lg text-center">
+          <div className="bg-white p-6 rounded-xl shadow-lg text-center md:col-span-2">
             <div className="text-3xl font-bold text-primary mb-2">100%</div>
             <div className="text-gray-600">Open Source</div>
           </div>
@@ -192,7 +192,7 @@ export default function ProjectsPage() {
           )}
         </div>
 
-        {/* GitHub CTA */}
+        {/* GitHub  */}
         <div className="mt-16 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 text-center">
           <Github className="h-12 w-12 text-gray-700 mx-auto mb-4" />
           <h3 className="text-2xl font-bold mb-4">Want to see more?</h3>
@@ -200,7 +200,7 @@ export default function ProjectsPage() {
             Check out my GitHub profile for more projects, contributions, and open-source work.
           </p>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Kipngetich222"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-black transition-colors"

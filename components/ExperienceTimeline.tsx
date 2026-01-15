@@ -11,57 +11,59 @@ interface TimelineItem {
   period: string
   description: string
   technologies: string[]
-  type: 'internship' | 'full-time' | 'freelance' | 'academic'
+  type: 'volunteer' | 'full-time' | 'freelance' | 'academic' | 'attachment' | 'contract'
 }
 
 const timelineData: TimelineItem[] = [
   {
     id: 1,
-    title: 'Software Development Intern',
-    company: 'Tech Solutions Inc.',
-    location: 'San Francisco, CA',
-    period: 'Summer 2023',
-    description: 'Developed and maintained web applications using React and Node.js. Collaborated with senior developers on implementing new features and optimizing performance.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'AWS'],
-    type: 'internship'
+    title: 'Industrial Attachment – ICT Support',
+    company: 'County Government of Bomet – Department of Finance, ICT & Economic Planning',
+    location: 'Bomet, Kenya',
+    period: 'May 2024 – Aug 2024',
+    description: 'Provided ICT user support and troubleshooting forhardware/software issues also web maintenance, software installations (Windows OS, patches, antivirus), network configuration, data entry, data recovery, and system updates. ',
+    technologies: ['React', 'Node.js', 'MySQL', 'Kaspersky', 'Windows Server', 'Linux', 'Cisco Networking'],
+    type: 'attachment'
   },
   {
     id: 2,
-    title: 'Full-Stack Developer',
-    company: 'University Project - E-Learning Platform',
-    location: 'Remote',
-    period: 'Jan 2023 - May 2023',
-    description: 'Led a team of 4 students to develop an e-learning platform with real-time chat and video capabilities. Implemented user authentication and course management features.',
-    technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io'],
-    type: 'academic'
-  },
-  {
-    id: 3,
-    title: 'Freelance Web Developer',
+    title: 'Freelance Software & Web Developer',
     company: 'Freelance',
     location: 'Remote',
-    period: '2022 - Present',
-    description: 'Built responsive websites and web applications for small businesses and startups. Focused on creating user-friendly interfaces and optimizing for performance.',
-    technologies: ['React', 'Tailwind CSS', 'Firebase', 'Figma'],
+    period: ' 2024 – 2025',
+    description: 'Developed custom software solutions and responsive websites for clients. Designed logos, brochures, and UI/UX mockups using Figma, Adobe tools, and Canva.',
+    technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io', 'Figma', 'Adobe Photoshop', 'Canva'],
     type: 'freelance'
   },
   {
+    id: 3,
+    title: 'Training of Trainers (TOT)',
+    company: 'The African Centre for Women, ICT (ACWICT)',
+    location: 'Kisii, Kenya',
+    period: 'Sep 2023 – Mar 2024',
+    description: 'Empower farmers, particularly women and youth, through scalable and accessible digital agricultural services.',
+    technologies: ['Google Workspace', 'Microsoft Office Suite', 'Basic Computer Skills', 'Smartphones & Tablets'],
+    type: 'contract'
+  },
+  {
     id: 4,
-    title: 'Research Assistant',
-    company: 'University AI Lab',
-    location: 'University Campus',
-    period: 'Sep 2022 - Dec 2022',
-    description: 'Assisted in machine learning research projects focusing on natural language processing. Developed data preprocessing pipelines and visualization tools.',
-    technologies: ['Python', 'TensorFlow', 'Pandas', 'Matplotlib'],
-    type: 'academic'
+    title: 'Learning Facilitator',
+    company: 'Young Scientist Kenya (YSK) with Raspberry Pi Foundation',
+    location: 'Hema High - Chitago, Kisii County, Kenya',
+    period: '2023 – 2025',
+    description: 'Taught programming fundamentals using Scratch and Python, emphasizing logic, algorithms, and problem-solving skills. Guided students in developing small applications and interactive projects, reinforcing computational thinking and clean coding practices.',
+    technologies: ['Python', 'Scratch', 'VS Code', 'Raspberry Pi'],
+    type: 'volunteer'
   }
 ]
 
 const typeColors = {
-  'internship': 'bg-blue-100 text-blue-800',
+  'volunteer': 'bg-blue-100 text-blue-800',
   'full-time': 'bg-green-100 text-green-800',
   'freelance': 'bg-purple-100 text-purple-800',
-  'academic': 'bg-amber-100 text-amber-800'
+  'academic': 'bg-amber-100 text-amber-800',
+  'attachment': 'bg-teal-100 text-teal-800',
+  'contract': 'bg-red-100 text-red-800'
 }
 
 export default function ExperienceTimeline() {

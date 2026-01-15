@@ -75,8 +75,8 @@ export default function ExperiencePage() {
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-sm">Machine Learning</span>
                 <span className="px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-sm">Cloud Computing</span>
-                <span className="px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-sm">Cybersecurity</span>
-                <span className="px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-sm">Blockchain</span>
+                <span className="px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-sm">Full Stack Applications</span>
+                
               </div>
             </div>
           </div>
@@ -95,8 +95,8 @@ export default function ExperiencePage() {
             <div className="flex flex-col md:flex-row items-start gap-8">
               <div className="flex-1">
                 <h3 className="text-2xl font-bold mb-2">Bachelor of Science in Computer Science</h3>
-                <p className="text-xl text-primary font-semibold mb-4">University of Technology</p>
-                <p className="text-gray-600 mb-4">Graduated: May 2024 | GPA: 3.8/4.0</p>
+                <p className="text-xl text-primary font-semibold mb-4">Kisii University</p>
+                <p className="text-gray-600 mb-4">Graduated: December 2025</p>
                 <div className="space-y-3">
                   <h4 className="font-semibold text-lg">Relevant Coursework:</h4>
                   <div className="flex flex-wrap gap-2">
@@ -108,28 +108,26 @@ export default function ExperiencePage() {
                     <span className="px-3 py-1 bg-gray-100 rounded-full">Software Engineering</span>
                     <span className="px-3 py-1 bg-gray-100 rounded-full">Web Development</span>
                     <span className="px-3 py-1 bg-gray-100 rounded-full">Cloud Computing</span>
+                    <span className="px-3 py-1 bg-gray-100 rounded-full">Cybersecurity</span>
                   </div>
                 </div>
               </div>
               <div className="bg-primary/10 p-6 rounded-xl">
-                <h4 className="font-bold text-lg mb-4">Achievements</h4>
+                <h4 className="font-bold text-lg mb-4">Achievements & Engagements</h4>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-2">
                     <Award className="h-5 w-5 text-primary" />
-                    <span>Dean's List (All Semesters)</span>
+                    <span>Core Team Member - GDSC Kisii University</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Award className="h-5 w-5 text-primary" />
-                    <span>Best Capstone Project Award</span>
+                    <span>Best  Project Award (Final year)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Award className="h-5 w-5 text-primary" />
-                    <span>Computer Science Department Scholarship</span>
+                    <span>Computer Science Department Recognition</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Award className="h-5 w-5 text-primary" />
-                    <span>Undergraduate Research Grant</span>
-                  </li>
+                  
                 </ul>
               </div>
             </div>
@@ -141,12 +139,12 @@ export default function ExperiencePage() {
           <h2 className="text-3xl font-bold mb-8 text-center">Certifications</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
+              { title: 'Computer Science', issuer: 'Kisii University', year: '2025' },
               { title: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', year: '2024' },
-              { title: 'Google Professional Data Engineer', issuer: 'Google Cloud', year: '2023' },
-              { title: 'Meta Front-End Developer', issuer: 'Meta', year: '2023' },
-              { title: 'Microsoft Azure Fundamentals', issuer: 'Microsoft', year: '2023' },
+              { title: 'Ajira Digital – Graphic Design', issuer: 'Ministry of ICT', year: '2023' },
               { title: 'Cisco Cybersecurity Essentials', issuer: 'Cisco', year: '2022' },
-              { title: 'TensorFlow Developer Certificate', issuer: 'Google', year: '2022' },
+              
+
             ].map((cert, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="flex items-start justify-between mb-4">
