@@ -229,13 +229,13 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="John Doe"
+                      placeholder="Victor Yegon"
                     />
                   </div>
                   
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email Address *
+                      Your Email Address *
                     </label>
                     <input
                       type="email"
@@ -245,7 +245,7 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="john@example.com"
+                      placeholder="victoryegon222@gmail.com"
                       suppressHydrationWarning
                     />
                   </div>
@@ -279,7 +279,7 @@ export default function ContactPage() {
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                    placeholder="Tell me about your project or inquiry..."
+                    placeholder="Tell me about the project or inquiry..."
                   />
                 </div>
 
