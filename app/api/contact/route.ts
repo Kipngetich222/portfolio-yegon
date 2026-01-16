@@ -62,9 +62,9 @@ export async function POST(request: NextRequest) {
       )
     }
     // Add debugging to your POST function
-console.log('GMAIL_USER exists:', !!process.env.GMAIL_USER)
-console.log('GMAIL_APP_PASSWORD exists:', !!process.env.GMAIL_APP_PASSWORD)
-console.log('All environment variables:', Object.keys(process.env).filter(key => key.includes('GMAIL')))
+// console.log('GMAIL_USER exists:', !!process.env.GMAIL_USER)
+// console.log('GMAIL_APP_PASSWORD exists:', !!process.env.GMAIL_APP_PASSWORD)
+// console.log('All environment variables:', Object.keys(process.env).filter(key => key.includes('GMAIL')))
 
     // Check if environment variables are set
     if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
